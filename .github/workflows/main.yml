@@ -1,37 +1,29 @@
-name: Update Daily Quote
+name: Update README
 
 on:
+  workflow_dispatch:  # Allows manual triggering
   schedule:
-    - cron: '0 0 * * *'  
-  workflow_dispatch:  
+   - cron: '46 2 * * *'
 
 jobs:
-  update-quote:
+  update-readme:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Fetch daily quote
-      run: |
-        curl -s "https://readme-daily-quotes.vercel.app/api?font=merienda" > daily_quote.txt
-        QUOTE=$(cat daily_quote.txt)
-
-    - name: Update README with new quote
-      run: |
-        
-        README_PATH="README.md"
-        
-        
-        NEW_QUOTE="<p align=\"center\"><img src=\"$QUOTE\" alt=\"Daily Quote\"></p>"
-        
-        
-        sed -i "s|<p align=\"center\"><img src=.* alt=\"Daily Quote\"></p>|$NEW_QUOTE|g" $README_PATH
-        
-        
-        git config user.name "Soumyaditya25"
-        git config user.email "Soumyaditya2021@gmail.com"
-        git add $README_PATH
-        git commit -m "Update daily quote"
-        git push
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.17.1'
+      - name: Install Dependencies
+        run: npm install
+      - name: Fetch Quote and Update README
+        run: node update-readme.js
+      - name: Commit and push if changed
+        run: |
+          git diff
+          git config --global user.name "Soumyaditya25"
+          git config --global user.email "Soumyaditya2021@gmail.com"
+          git commit -am "Updated README" 
+          git push
+        env:
+         ACTIONS_GITHUB_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
