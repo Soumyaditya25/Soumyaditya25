@@ -1,10 +1,9 @@
-name: Update README
+name: Update README Quotes
 
 on:
-  workflow_dispatch:  # Allows manual triggering
+  workflow_dispatch: 
   schedule:
-   - cron: '46 2 * * *'
-
+    - cron: '46 2 * * *' 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -20,10 +19,12 @@ jobs:
         run: node update-readme.js
       - name: Commit and push if changed
         run: |
-          git diff
-          git config --global user.name "Soumyaditya25"
-          git config --global user.email "Soumyaditya2021@gmail.com"
-          git commit -am "Updated README" 
-          git push
+          git diff --quiet || (
+            git config --global user.name "Soumyaditya25"
+            git config --global user.email "Soumyaditya2021@gmail.com"
+            git add README.md
+            git commit -m "Updated README with new quote"
+            git push
+          )
         env:
-         ACTIONS_GITHUB_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
+          ACTIONS_GITHUB_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
