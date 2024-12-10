@@ -19,7 +19,7 @@ const Soumyaditya = {
  hobbies: ["🎶 Music", "🌍 Exploring New Things", "💻 Coding", "✈️ Traveling to New Places"]
 };
 ```
-
+<br><br>
 
 
 
