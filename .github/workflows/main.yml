@@ -1,0 +1,27 @@
+name: Update Quotes
+
+on:
+  schedule:
+    - cron: "0 0 * * *" 
+    
+jobs:
+  update-quote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+      - name: Update Quote
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - name: Run Script
+        run: |
+          npm install axios
+          node index.js
+      - name: Commit Changes
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add README.md
+          git commit -m "Updated Quote of the Day"
+          git push
