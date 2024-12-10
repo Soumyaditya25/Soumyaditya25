@@ -30,8 +30,8 @@ jobs:
         sed -i "s|<p align=\"center\"><img src=.* alt=\"Daily Quote\"></p>|$NEW_QUOTE|g" $README_PATH
         
         
-        git config user.name "github-actions"
-        git config user.email "github-actions@github.com"
+        git config user.name "Soumyaditya25"
+        git config user.email "Soumyaditya2021@gmail.com"
         git add $README_PATH
         git commit -m "Update daily quote"
         git push
