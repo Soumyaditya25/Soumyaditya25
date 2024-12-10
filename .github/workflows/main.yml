@@ -1,0 +1,30 @@
+name: Update README Quotes
+
+on:
+  workflow_dispatch: 
+  schedule:
+    - cron: '46 2 * * *' 
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.17.1'
+      - name: Install Dependencies
+        run: npm install
+      - name: Fetch Quote and Update README
+        run: node index.js
+      - name: Commit and push if changed
+        run: |
+          git diff --quiet || (
+            git config --global user.name "Soumyaditya25"
+            git config --global user.email "Soumyaditya2021@gmail.com"
+            git add README.md
+            git commit -m "Updated README with new quote"
+            git push
+          )
+        env:
+          ACTIONS_GITHUB_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
