@@ -1,5 +1,5 @@
 <h2> Hi, I'm Soumyadtiya !! <img src="https://media.giphy.com/media/WUm2STzv0N5fl3ezyr/giphy.gif" width="50"></h2>
-<img align='right' src="https://via.placeholder.com/240" alt="My GIF" width="240">
+<img align="rounded_imageCoding.png" alt="My GIF" width="240">
 <p><em>Project Student at Polaris School of Technology</em><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30"></p>
 <p><em>🔍 Currently exploring: Real World Problems and Artificial Intelligence <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> </em></p>
 <br><br><br><br><br><br><br><br>
