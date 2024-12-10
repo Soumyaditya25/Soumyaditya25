@@ -1,27 +1,32 @@
-name: Update Quotes
+name: Update Daily Quote
 
 on:
   schedule:
-    - cron: "0 0 * * *" 
-    
+    - cron: '0 0 * * *'  
+  workflow_dispatch: 
+
 jobs:
   update-quote:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v3
-      - name: Update Quote
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14
-      - name: Run Script
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch random quote from API
         run: |
-          npm install axios
-          node index.js
-      - name: Commit Changes
+          curl -s https://api.quotable.io/random -o quote.json
+          QUOTE=$(jq -r '.content' quote.json)
+          AUTHOR=$(jq -r '.author' quote.json)
+          DATE=$(date '+%B %d, %Y')
+          echo "## Today's Inspiration ($DATE)" > new-quote.md
+          echo "\"$QUOTE\" - $AUTHOR" >> new-quote.md
+
+      - name: Update README.md with new quote
         run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "actions@github.com"
+          cat new-quote.md >> README.md
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
           git add README.md
-          git commit -m "Updated Quote of the Day"
-          git push
+          git commit -m "Update Today's Inspiration section"
+          git push origin main
