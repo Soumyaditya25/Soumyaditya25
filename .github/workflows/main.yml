@@ -16,7 +16,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Fetch Quote and Update README
-        run: node update-readme.js
+        run: node index.js
       - name: Commit and push if changed
         run: |
           git diff --quiet || (
