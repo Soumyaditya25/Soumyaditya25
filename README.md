@@ -9,8 +9,8 @@
 ```javascript
 const Soumyaditya = {
   pronouns: "he" | "him",
-  code: [ "Javascript", "HTML", "CSS", "Java" ],
-  tools: ["MongoDB", "PostgreSQL", "Docker" ],
+  code: [ "Javascript", "HTML", "CSS", "Java", "Python" ],
+  tools: ["MongoDB", "PostgreSQL", "Docker", "Github" ],
   techCommunities: {
     techClub: "PolarisTechClub",
     EntrepreneurshipClub: "Ecell Polaris",
@@ -33,9 +33,9 @@ const Soumyaditya = {
 
 
 ### 🌐 Connect with me:
-[![LinkedIn: Akhilesh](https://img.shields.io/badge/-Soumyaditya.-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/soumyaditya-batabyal-442317290/)
-[![LeetCode](https://img.shields.io/badge/-LeetCode-black?style=social&logo=leetcode)](https://leetcode.com/u/soumyaditya_19/)
-[![Medium](https://img.shields.io/badge/-Blogs-black?style=social&logo=medium)](https://medium.com/@soumyaditya2021)
+[![LinkedIn:Soumyaditya](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/soumyaditya-batabyal-442317290/)
+[![LeetCode:Soumyaditya](https://img.shields.io/badge/-LeetCode-black?style=social&logo=leetcode)](https://leetcode.com/u/soumyaditya_19/)
+[![Medium:Soumyaditya](https://img.shields.io/badge/-Blogs-black?style=social&logo=medium)](https://medium.com/@soumyaditya2021)
 <br>
 
 
@@ -43,6 +43,7 @@ const Soumyaditya = {
 
 ### 🚀 Tech Stack:
 ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
+![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=Python)
 ![Java](https://img.shields.io/badge/-Java-black?style=flat-square&logo=openjdk)
 ![CSS3](https://img.shields.io/badge/-CSS3-black?style=flat-square&logo=css3)
 ![HTML5](https://img.shields.io/badge/-HTML5-black?style=flat-square&logo=html5)
@@ -53,20 +54,23 @@ const Soumyaditya = {
 
 
 ## 🔥 GitHub Stats:
+
 <p align="center">
   <a href="https://github.com/Soumyaditya25">
-    <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=Soumyaditya25&show_icons=true&theme=react&hide_border=true" height="150px"/>
+    <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=Soumyaditya25&show_icons=true&theme=react&hide_border=true" height="150px" />
   </a>
   <a href="https://github.com/Soumyaditya25">
-    <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Soumyaditya25&layout=compact&theme=react&hide_border=true" height="150px"/>
+    <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Soumyaditya25&layout=compact&theme=react&hide_border=true" height="150px" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/Soumyaditya25">
-    <img alt="Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Soumyaditya25&theme=react-dark" />
+    <img alt="Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Soumyaditya25&theme=react-dark&hide_border=true" />
   </a>
 </p>
+
+
 <br><br>
 
 
