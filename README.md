@@ -8,7 +8,7 @@
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me... 
 ```javascript
 const Soumyaditya = {
-  pronouns: "he" | "him",
+  pronouns: ["he" | "him"],
   code: [ "Javascript", "HTML", "CSS", "Java", "Python" ],
   tools: ["MongoDB", "PostgreSQL", "Docker", "Github" ],
   techCommunities: {
