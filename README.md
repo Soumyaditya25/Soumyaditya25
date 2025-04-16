@@ -10,7 +10,7 @@
 const Soumyaditya = {
   pronouns: ["he" | "him"],
   code: [ "Javascript", "HTML", "CSS", "Java", "Python" ],
-  tools: ["MongoDB", "PostgreSQL", "Docker", "Github" ],
+  tools: ["MongoDB", "MySQL", "Docker", "Github" ],
   techCommunities: {
     techClub: "PolarisTechClub",
     EntrepreneurshipClub: "Ecell Polaris",
