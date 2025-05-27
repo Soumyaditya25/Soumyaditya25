@@ -12,7 +12,8 @@ const Soumyaditya = {
   languages: ["JavaScript", "Java", "Python", "Golang"],
   frameworks: ["Node.js", "ReactJS", "ExpressJS", "Django"],
   databases: ["MongoDB", "MySQL", "PostgreSQL"],
-  Tools & Technology: ["Docker (CLI)", "Git", "GitHub", "Linux", "Ubuntu", "REST API", "Postman"],
+  Tools & Technology: ["Docker (CLI)", "Kubernetes", "Git", "GitHub", "Linux", "Ubuntu", "REST API", "Postman", "CI/CD (GitHub Actions,
+  Jenkins)"],
   techCommunities: {
     techClub: "PolarisTechClub",
     Entrepreneurship Club: "Ecell Polaris",
@@ -57,6 +58,7 @@ const Soumyaditya = {
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-2496ED?style=for-the-badge&logo=Kubernetes&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
