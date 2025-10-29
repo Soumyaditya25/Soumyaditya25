@@ -94,8 +94,9 @@ const Soumyaditya = {
 
 ### 🌍 Visitor Count:
 <p align="center">
-  <img src="https://profile-counter.glitch.me/Soumyaditya25/count.svg" alt="Visitor Count" />
+  <img src="https://profile-counter.deno.dev/Soumyaditya25/count.svg" alt="Visitor Count" />
 </p>
+
 
 
 
