@@ -72,14 +72,7 @@ const Soumyaditya = {
 
 ## 🔥 GitHub Stats:
 
-<p align="center">
-  <a href="https://github.com/Soumyaditya25">
-    <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=Soumyaditya25&show_icons=true&theme=react&hide_border=true" height="150px" />
-  </a>
-  <a href="https://github.com/Soumyaditya25">
-    <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Soumyaditya25&layout=compact&theme=react&hide_border=true" height="150px" />
-  </a>
-</p>
+
 
 <p align="center">
   <a href="https://github.com/Soumyaditya25">
