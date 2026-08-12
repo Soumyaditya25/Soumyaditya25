@@ -37,8 +37,7 @@ const Soumyaditya = {
 
 ### 🌐 Connect with me:
 [![LinkedIn:Soumyaditya](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/soumyaditya-batabyal-442317290/)
-[![LeetCode:Soumyaditya](https://img.shields.io/badge/-LeetCode-black?style=social&logo=leetcode)](https://leetcode.com/u/soumyaditya_19/)
-[![Medium:Soumyaditya](https://img.shields.io/badge/-Blogs-black?style=social&logo=medium)](https://medium.com/@soumyaditya2021)
+
 <br>
 
 
